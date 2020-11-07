@@ -12,7 +12,7 @@ server.on('request', (req, res) => {
 
   if (checkPathName.length > 1) {
     res.statusCode = 400;
-    res.end("Nested file path")
+    res.end("Nested file path");
     return;
   }
 
@@ -27,9 +27,9 @@ server.on('request', (req, res) => {
           return;
         }
         res.statusCode = 500;
-        res.end()
+        res.end();
       })
-      .pipe(res);
+        .pipe(res);
       break;
 
     default:
